@@ -1,0 +1,23 @@
+{
+  "name": "pig-latin-translator",
+  "version": "1.0.0",
+  "description": "A new alien species has moved to earth and they only speak pig-latin! The president has called you and says that they need your help!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herrolisa/pig-latin-translator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herrolisa/pig-latin-translator/issues"
+  },
+  "homepage": "https://github.com/herrolisa/pig-latin-translator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
