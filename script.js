@@ -1,3 +1,10 @@
+function translateToPig() {
+  var input = document.getElementById('translation-input').value;
+  var output = document.getElementById('translated');
+  var translated = englishToPig(input);
+  output.innerHTML = translated;
+}
+
 function englishToPig(engString){
   if (typeof engString !== 'string'){
     throw new Error();
