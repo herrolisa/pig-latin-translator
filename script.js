@@ -1,0 +1,3 @@
+function translateToPig() {
+  alert('test');
+}
