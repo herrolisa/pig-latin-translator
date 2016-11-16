@@ -1,3 +1,7 @@
+/**** IMPORT GOOGLE FONT ****/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Rye');
+
+/**** RESET ALL DEFAULT STYLES ****/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -45,4 +49,13 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/**** CUSTOM STYLES ****/
+h1{
+  font-family: 'Rye', cursive;
+  font-weight: 400;
+}
+h2, h3, h4, h5, h6, p{
+  font-family: 'Raleway', sans-serif;
 }
