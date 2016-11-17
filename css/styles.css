@@ -75,6 +75,7 @@ h2, h3, h4, h5, h6, p{
 
 .page-title{
   margin: 0 auto;
+  padding: 0 15px;
   text-align: center;
 }
 .page-title h2{
@@ -90,12 +91,10 @@ h2, h3, h4, h5, h6, p{
   margin-top: 25px;
   padding: 15px 0;
 }
-
 .app-inner-border{
   border-top: 2px dashed #FFFFFF;
   border-bottom: 2px dashed #FFFFFF;
 }
-
 .translator-app{
   margin: 25px 50px;
 }
@@ -104,21 +103,41 @@ h2, h3, h4, h5, h6, p{
   display: block;
   margin: 0 auto;
   width: 100%;
-  height: 50px;
+  height: 75px;
+  border: 1px solid #D6679A;
+  outline: none;
+  resize: none;
 }
 .app-button{
   display: block;
   margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #D6679A;
+  color: #EAD5DF;
+  border: 1px solid #D6679A;
+}
+.app-button:hover{
+  background-color: #EAD5DF;
+  color: #D6679A;
 }
 .app-output{
   background-color: #FFFFFF;
+  border: 1px solid #D6679A;
   display: block;
   margin: 0 auto;
   width: 75%;
   padding: 10px;
 }
 .app-output span{
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-style: italic;
   color: #68585F;
+}
+.app-output p{
+  font-size: 0.9rem;
 }
