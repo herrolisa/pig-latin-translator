@@ -70,7 +70,7 @@ h2, h3, h4, h5, h6, p{
 }
 
 .container{
-  margin: 25px 0;
+  margin: 50px 0;
 }
 
 .page-title{
@@ -88,7 +88,7 @@ h2, h3, h4, h5, h6, p{
 
 .app-container{
   background-color: #E199BA;
-  margin-top: 25px;
+  margin-top: 30px;
   padding: 15px 0;
 }
 .app-inner-border{
@@ -96,7 +96,7 @@ h2, h3, h4, h5, h6, p{
   border-bottom: 2px dashed #FFFFFF;
 }
 .translator-app{
-  margin: 25px 50px;
+  margin: 25px;
 }
 
 .app-input{
@@ -116,7 +116,7 @@ h2, h3, h4, h5, h6, p{
 }
 .app-button{
   display: block;
-  margin: 15px auto;
+  margin: 25px auto;
   padding: 10px;
   width: 100%;
   max-width: 750px;
@@ -149,4 +149,19 @@ h2, h3, h4, h5, h6, p{
 }
 .app-output p{
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px){
+  .container{
+    margin: 25px 0;
+  }
+  .app-container{
+    margin-top: 25px;
+  }
+  .translator-app{
+    margin: 25px 50px;
+  }
+  .app-button{
+    margin: 15px auto;
+  }
 }
