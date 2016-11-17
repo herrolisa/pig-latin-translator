@@ -1,5 +1,5 @@
 /**** IMPORT GOOGLE FONT ****/
-@import url('https://fonts.googleapis.com/css?family=Raleway|Rye');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Rye');
 
 /**** RESET ALL DEFAULT STYLES ****/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -52,10 +52,22 @@ table {
 }
 
 /**** CUSTOM STYLES ****/
+body{
+  background-color: #E8C3D4;
+  background-image: url(../img/pink-gingham.jpg);
+}
+
 h1{
   font-family: 'Rye', cursive;
   font-weight: 400;
+  font-size: 3rem;
+  color: #68384F;
 }
 h2, h3, h4, h5, h6, p{
   font-family: 'Raleway', sans-serif;
+}
+
+.page-title h2{
+  font-weight: bold;
+  text-transform: uppercase;
 }
