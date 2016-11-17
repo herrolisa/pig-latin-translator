@@ -3,7 +3,7 @@ engToPigBtn.addEventListener('click', translateToPig);
 
 function translateToPig() {
   var input = document.getElementById('translation-input').value;
-  var output = document.getElementById('translated');
+  var output = document.getElementById('translated-text');
   var translated = englishToPig(input);
   output.innerHTML = translated;
 }
