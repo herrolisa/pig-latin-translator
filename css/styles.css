@@ -126,27 +126,27 @@ h2, h3, h4, h5, h6, p{
   font-weight: bold;
   text-transform: uppercase;
   background-color: #D6679A;
-  color: #EAD5DF;
+  color: #E8C3D4;
   border: 1px solid #D6679A;
 }
 .app-button:hover{
-  background-color: #EAD5DF;
+  background-color: #E8C3D4;
   color: #D6679A;
 }
 .app-output{
   background-color: #FFFFFF;
   border: 1px solid #D6679A;
-  display: block;
+  display: none;
   margin: 0 auto;
   width: 100%;
   max-width: 750px;
   padding: 10px;
 }
-.app-output span{
+/*.app-output span{
   font-size: 0.85rem;
   font-style: italic;
   color: #68585F;
-}
+}*/
 .app-output p{
   font-size: 0.9rem;
 }
