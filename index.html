@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Talk Pig To Me | A Pig Latin Translator</title>
+  <title>Talk Pig To Me || A Pig Latin Translator</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -17,7 +17,10 @@
       <div class="app-inner-border">
         <div class="translator-app">
           <textarea id="translation-input" class="app-input" placeholder="What would you like to translate today?"></textarea>
-          <button id="translation-btn" class="app-button">Translate To Pig Latin</button>
+          <div class="btn-container">
+            <button id="pig-translation-btn" class="pig-btn app-btn">Translate To Pig Latin</button>
+            <button id="eng-translation-btn" class="eng-btn app-btn">Translate To English</button>
+          </div>
           <div id="translated" class="app-output">
             <p id="translated-text">
             </p>
