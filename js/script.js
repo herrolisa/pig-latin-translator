@@ -26,7 +26,7 @@ function englishToPig(engString){
   var seperate = engString.split(' ');
   for (var i = 0; i < seperate.length; i++){
     //2. take each word and split based on if it starts with vowel or consonant
-    var splitUp = seperate[i].split(/([aeiouAEIOU].*)/);
+    var splitUp = seperate[i].split(/([aeiouyAEIOUY].*)/);
     //this string starts with a vowel
     if (splitUp[0].length === 0){
       splitUp[1] += 'ay';
