@@ -30,6 +30,8 @@ function englishToPig(engString){
     //this string starts with a vowel
     if (splitUp[0].length === 0){
       splitUp[1] += 'ay';
+    }else if (splitUp.length === 1){ //this string does not have vowels
+      splitUp[0] +='-ay';
     }else{ //this string begins with a consonant
       splitUp[0] += 'ay';
       splitUp[1] += '-';
