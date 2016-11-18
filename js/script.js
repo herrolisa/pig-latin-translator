@@ -25,11 +25,18 @@ function englishToPig(engString){
   //1. seperate sentence into array
   var seperate = engString.split(' ');
   for (var i = 0; i < seperate.length; i++){
-    //2. take each word and split based on if it starts with vowel or consonant
+    //2. take each word and split based on if it starts with vowel or consonant ('y' considered vowel if within word)
     var splitUp = seperate[i].split(/([aeiouyAEIOUY].*)/);
     //this string starts with a vowel
     if (splitUp[0].length === 0){
-      splitUp[1] += 'ay';
+      if (splitUp[1].charAt(0) === 'y' || splitUp[1].charAt(0) === 'Y'){ //if word begins with 'y' then considered consonant
+        var secondSplit = splitUp[1].split(/([aeiouAEIOU].*)/);
+        secondSplit[0] += 'ay';
+        secondSplit[1] += '-';
+        splitUp = secondSplit.reverse();
+      }else{
+        splitUp[1] += 'ay';
+      }
     }else if (splitUp.length === 1){ //this string does not have vowels
       splitUp[0] +='-ay';
     }else{ //this string begins with a consonant
