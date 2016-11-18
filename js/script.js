@@ -1,5 +1,7 @@
 var engToPigBtn = document.getElementById('pig-translation-btn');
 engToPigBtn.addEventListener('click', translateToPig);
+var pigToEngBtn = document.getElementById('eng-translation-btn');
+pigToEngBtn.addEventListener('click', translateToEng);
 
 function translateToPig() {
   var input = document.getElementById('translation-input').value;
@@ -13,6 +15,24 @@ function translateToPig() {
     }
   }else{
     var translated = englishToPig(input);
+    output.innerHTML = translated;
+    outputContainer.setAttribute("style", "display:block");
+  }
+}
+
+function translateToEng() {
+  // alert('coming soon!');
+  var input = document.getElementById('translation-input').value;
+  var outputContainer = document.getElementById('translated');
+  var output = document.getElementById('translated-text');
+  if (input === ""){
+    if (document.getElementById('translation-input').placeholder === 'Please type something to translate.'){
+      document.getElementById('translation-input').placeholder = 'This translator works best when you type in text to translate.';
+    }else{
+      document.getElementById('translation-input').placeholder = 'Please type something to translate.';
+    }
+  }else{
+    var translated = pigToEnglish(input);
     output.innerHTML = translated;
     outputContainer.setAttribute("style", "display:block");
   }
@@ -52,5 +72,25 @@ function englishToPig(engString){
     seperate[i] = splitUp.join('');
   }
   //4. put the sentence back together
+  return seperate.join(' ');
+}
+
+function pigToEnglish(pigString) {
+  if (typeof pigString !== 'string'){
+    throw new Error();
+  }
+  //1. seperate sentence into array
+  var seperate = pigString.split(' ');
+  //2. take each word and remove/move the end based on if appended with "ay" or "'-' + consonant + 'ay'"
+  for (var i = 0; i < seperate.length; i++) {
+    //this will be an English word that begins with a vowel
+    if (seperate[i].indexOf('-') === -1){
+      seperate[i] = seperate[i].slice(0, -2);
+    }else{ //this will be an English word that begins with a consonant
+      var clippedEnd = seperate[i].slice(0, -2);
+      seperate[i] = clippedEnd.split('-').reverse().join('');
+    }
+  }
+  //3. put the sentence back together
   return seperate.join(' ');
 }
