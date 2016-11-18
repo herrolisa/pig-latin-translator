@@ -86,9 +86,17 @@ h2, h3, h4, h5, h6, p{
   color: #68585F;
 }
 
+.pig-container{
+  margin-top: 25px;
+  background: url(../img/pig.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px;
+  height:200px;
+}
+
 .app-container{
   background-color: #E199BA;
-  margin-top: 30px;
   padding: 15px 0;
 }
 .app-inner-border{
@@ -154,9 +162,6 @@ h2, h3, h4, h5, h6, p{
 @media screen and (min-width: 768px){
   .container{
     margin: 25px 0 0 0;
-  }
-  .app-container{
-    margin-top: 25px;
   }
   .translator-app{
     margin: 25px 50px;
