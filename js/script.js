@@ -21,7 +21,6 @@ function translateToPig() {
 }
 
 function translateToEng() {
-  // alert('coming soon!');
   var input = document.getElementById('translation-input').value;
   var outputContainer = document.getElementById('translated');
   var output = document.getElementById('translated-text');
