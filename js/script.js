@@ -1,4 +1,4 @@
-var engToPigBtn = document.getElementById('translation-btn');
+var engToPigBtn = document.getElementById('pig-translation-btn');
 engToPigBtn.addEventListener('click', translateToPig);
 
 function translateToPig() {
@@ -31,9 +31,13 @@ function englishToPig(engString){
     if (splitUp[0].length === 0){
       if (splitUp[1].charAt(0) === 'y' || splitUp[1].charAt(0) === 'Y'){ //if word begins with 'y' then considered consonant
         var secondSplit = splitUp[1].split(/([aeiouAEIOU].*)/);
-        secondSplit[0] += 'ay';
-        secondSplit[1] += '-';
-        splitUp = secondSplit.reverse();
+        if (secondSplit.length === 1){ //this is just the letter 'y'
+          splitUp[1] += 'ay';
+        }else{
+          secondSplit[0] += 'ay';
+          secondSplit[1] += '-';
+          splitUp = secondSplit.reverse();
+        }
       }else{
         splitUp[1] += 'ay';
       }
