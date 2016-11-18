@@ -6,7 +6,11 @@ function translateToPig() {
   var outputContainer = document.getElementById('translated');
   var output = document.getElementById('translated-text');
   if (input === ""){
-    document.getElementById('translation-input').placeholder = 'Please type something to translate.';
+    if (document.getElementById('translation-input').placeholder === 'Please type something to translate.'){
+      document.getElementById('translation-input').placeholder = 'This translator works best when you type in text to translate.';
+    }else{
+      document.getElementById('translation-input').placeholder = 'Please type something to translate.';
+    }
   }else{
     var translated = englishToPig(input);
     output.innerHTML = translated;
