@@ -122,9 +122,17 @@ h2, h3, h4, h5, h6, p{
   font-size: inherit;
   font-size: 0.85rem;
 }
-.app-button{
-  display: block;
+.btn-container{
   margin: 25px auto;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.app-btn{
+  display: block;
+  flex: 0 0 100%;
   padding: 10px;
   width: 100%;
   max-width: 750px;
@@ -137,9 +145,12 @@ h2, h3, h4, h5, h6, p{
   color: #E8C3D4;
   border: 1px solid #D6679A;
 }
-.app-button:hover{
+.app-btn:hover{
   background-color: #E8C3D4;
   color: #D6679A;
+}
+.pig-btn{
+  margin-bottom: 10px;
 }
 .app-output{
   background-color: #FFFFFF;
@@ -150,13 +161,20 @@ h2, h3, h4, h5, h6, p{
   max-width: 750px;
   padding: 10px;
 }
-/*.app-output span{
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #68585F;
-}*/
 .app-output p{
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 500px){
+  .btn-container{
+    margin: 15px auto;
+  }
+  .app-btn{
+    flex: 0 0 48%;
+  }
+  .pig-btn{
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -165,8 +183,5 @@ h2, h3, h4, h5, h6, p{
   }
   .translator-app{
     margin: 25px 50px;
-  }
-  .app-button{
-    margin: 15px auto;
   }
 }
