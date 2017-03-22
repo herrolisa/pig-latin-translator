@@ -7,4 +7,4 @@ This is a pig latin translator that will take in an english sentence and transla
 - Words that start with a consonant have all consonant letters up to the first vowel moved to the end of the word (as opposed to just the first consonant letter), and "-ay" is appended.
 
 ## Translate Text Today!
-[https://herrolisa.github.io/pig-latin-translator](https://herrolisa.github.io/pig-latin-translator)
+[https://lisazhou.github.io/pig-latin-translator](https://lisazhou.github.io/pig-latin-translator)
