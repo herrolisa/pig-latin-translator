@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/herrolisa/pig-latin-translator.git"
+    "url": "git+https://github.com/lisazhou/pig-latin-translator.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/herrolisa/pig-latin-translator/issues"
+    "url": "https://github.com/lisazhou/pig-latin-translator/issues"
   },
-  "homepage": "https://github.com/herrolisa/pig-latin-translator#readme",
+  "homepage": "https://github.com/lisazhou/pig-latin-translator#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
